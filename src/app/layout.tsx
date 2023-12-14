@@ -17,7 +17,7 @@ export default function RootLayout({
     return (
         <html>
             <body>
-                    <header className='main_banner font_kalnia'>
+                    <header className='main_banner font_play_fair'>
                         <h1>
                             <Link href={'/'}>My Gam-Sung Blog</Link>
                         </h1>

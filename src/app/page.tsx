@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function Home() {
     return (
         <>
-            <div className={styles.title_box}>
-                <h2 className='font_kalnia'>Mok-Cha</h2>
+            <div className={`${styles.title_box} font_play_fair`}>
+                <h2>Mok-Cha</h2>
                 <Link href={'/write'}>write</Link>
             </div>
             <ul className={`${styles.posting_list}`}>
