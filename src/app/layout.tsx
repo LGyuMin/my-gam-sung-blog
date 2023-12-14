@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-import { playfair_display, noto_serif_KR } from '@/font'
-
 import '../common_style/globals.css'
 import '../common_style/common.scss'
 
@@ -19,12 +17,12 @@ export default function RootLayout({
     return (
         <html>
             <body>
-                    <header className={`main_banner ${playfair_display.className}`}>
+                    <header className='main_banner font_kalnia'>
                         <h1>
                             <Link href={'/'}>My Gam-Sung Blog</Link>
                         </h1>
                     </header>
-                    <section className={`main_section ${noto_serif_KR.className}`}>
+                    <section className='main_section'>
                         {children}
                     </section>
             </body>

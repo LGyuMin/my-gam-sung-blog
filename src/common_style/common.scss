@@ -11,7 +11,7 @@
         font-size: 55px;
         font-weight: 500;
         font-style: italic;
-        color: #6f6c5c;
+        color: #7e7d6e;
     }
 }
 
@@ -19,4 +19,12 @@
     width: 1100px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.font_kalnia {
+    font-family: var(--font-kalnia);
+}
+
+.font_noto_sans {
+    font-family: var(--font-noto-sans);
 }
