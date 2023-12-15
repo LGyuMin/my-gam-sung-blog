@@ -4,9 +4,7 @@ import Link from 'next/link'
 import { IPost } from '@/types'
 
 export default async function Home() {
-    const res = await fetch('http://localhost:9999/posts', {
-        cache: 'no-store'
-    })
+    const res = await fetch('http://localhost:9999/posts', {cache: 'no-store'})
     const posts: IPost[] = await res.json();
     return (
         <>
@@ -15,10 +13,10 @@ export default async function Home() {
                 <Link href={'/write'}>write</Link>
             </div>
             <ul className={`${styles.posting_list}`}>
-                <li className='font_noto_sans'>
-                    {
-                        posts.map(post => (
-                            <Link key={post.id} href={`/posting/${post.id}`}>
+                {
+                    posts.map(post => (
+                        <li className='font_noto_sans' key={post.id}>
+                            <Link href={`/posting/${post.id}`}>
                                 <div className={styles.img_box}></div>
                                 <div className={styles.text_box}>
                                     <p className={`${styles.title}`}>{ post.title }</p>
@@ -26,9 +24,9 @@ export default async function Home() {
                                 </div>
                                 <div className={styles.date}>{ post.created_at }</div>
                             </Link>
-                        ))
-                    }
-                </li>
+                        </li>
+                    ))
+                }
             </ul>
         </>
     )
