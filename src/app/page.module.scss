@@ -8,6 +8,9 @@
         border: 1px solid #000;
         margin-bottom: 10px;
         border-radius: 5px;
+        &:hover {
+            p {text-decoration: underline;}
+        }
     }
 }
 

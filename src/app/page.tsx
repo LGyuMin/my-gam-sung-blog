@@ -10,12 +10,14 @@ export default function Home() {
             </div>
             <ul className={`${styles.posting_list}`}>
                 <li className='font_noto_sans'>
-                    <div className={styles.img_box}></div>
-                    <div className={styles.text_box}>
-                        <p className={`${styles.title}`}>타이틀 이지롱롱롱롱 타이틀틀틅릍르</p>
-                        <p className={styles.content}>content</p>
-                    </div>
-                    <div className={styles.date}>2023.00.00</div>
+                    <Link href={'/posting/1'}>
+                        <div className={styles.img_box}></div>
+                        <div className={styles.text_box}>
+                            <p className={`${styles.title}`}>타이틀 이지롱롱롱롱 타이틀틀틅릍르</p>
+                            <p className={styles.content}>content</p>
+                        </div>
+                        <div className={styles.date}>2023.00.00</div>
+                    </Link>
                 </li>
             </ul>
         </>
