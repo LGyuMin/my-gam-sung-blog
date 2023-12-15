@@ -13,8 +13,9 @@
 }
 
 .editor_area {
-    height: 500px;
-    font-family: inherit !important;
+    .ql-container {
+        height: 500px;
+    }
 }
 
 .editor_btn_box {
