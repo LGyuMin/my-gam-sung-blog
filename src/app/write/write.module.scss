@@ -1,0 +1,33 @@
+.editor_box {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title_input {
+    margin-top: 10px;
+    border: none;
+    font-size: 19px;
+    outline: none;
+}
+
+.editor_area {
+    height: 500px;
+    font-family: inherit !important;
+}
+
+.editor_btn_box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
